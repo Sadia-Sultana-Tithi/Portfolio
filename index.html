@@ -9,31 +9,131 @@
 </head>
 <body class="bg-white">
   <header class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300">
-    <nav class="max-w-7xl max-auto bg-white md:bg-transparent p-5">
+    <nav class="max-w-7xl max-auto bg-white md:bg-transparent p-5 order-[10001]">
       <div class="flex items-center justify-between">
         <a class="text-black font-bold text-lg flex items-center gap-3">
-          <img src="/src/images/Logo.jpg" alt="">
-          Portfolio
-        </a>
-        <!-- large device -->
+          <img src="/src/images/Logo.jpg" alt="">Portfolio</a>
+
+        <!-- nav for large device -->
         <div class="hidden md:flex space-x-10">
           <a href="#home" class="text-primary hover:text-gray-500">Home</a>
           <a href="#projects" class="text-black hover:text-gray-500">Projects</a>
           <a href="#resume" class="text-black hover:text-gray-500">Resume</a>
         </div>
+
         <!-- mobile -->
          <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-2xl">
+          <button id="mobile-menu-button" class="text-black text-2xl">
             <i class="bx bx-menu"></i>
           </button>
          </div>
+        </div>
+
+         <!-- mobile menu  -->
         <div id="mobile-menu" class=" hidden md:hidden">
-          <a href="#home" class="text-primary hover:text-gray-500 block py-2 hover:bg-gray-300">Home</a>
+          <a href="#home" class="block text-primary hover:text-gray-500 py-2 hover:bg-gray-300">Home</a>
           <a href="#projects" class="text-black hover:text-gray-500 block py-2 hover:bg-gray-300">Projects</a>
           <a href="#resume" class="text-black hover:text-gray-500 block py-2 hover:bg-gray-300">Resume</a>
         </div>
-      </div>
+      
     </nav>
   </header>
+
+<!-- banner section  -->
+ <section class="max-w-7xl max-auto px-5 my-12" id="home">
+  <div class="flex md:flex-row flex-col justify-between items-center text-black gap-4 py-10">
+
+    <!-- left side  -->
+     <div class="md:w-1/2">
+      <p class="text-xl font-inter mb-4">
+        Hello, <span class="text-primary"> I'm</span>
+      </p>
+      <h1 class="font-bold text-4xl tracking-[3.22px] mb-5">
+        Sadia Sultana
+      </h1>
+      <p class="text-2xl font-montserrat mb-5">
+        Product Designer
+      </p>
+      <p class="text-xl mb-12 md:w-3/4 text-justify leading-8">
+        I am a product designer with a deep understanding of market trends and user behavior, creating impactful and relevant designs.
+      </p>
+      <button class="py-4 px-10 rounded-md bg-primary text-black font-bold">
+        Connect With Me
+      </button>
+      <!-- social media button -->
+      <div class="mt-12 mb-8 flex gap-4 items-center">
+      <div class="flex space-x-3">
+        <a href="#"><img src="src/images/dribbble.png" alt="" class="w-8 h-8"></a>
+        <a href="#"><img src="src/images/github.png" alt="" class="w-8 h-8"></a>
+        <a href="#"><img src="src/images/linkedin.png" alt="" class="w-8 h-8"></a>
+        <a href="#"><img src="src/images/envelope.png" alt="" class="w-8 h-8"></a>
+      </div>
+    </div>
+    </div>
+    <!-- right side  -->
+      <div class="md:w-1/2 order-first md:order-none">
+        <img src="src/images/profile.jpg" alt="" class="w-full md:ml-20">
+      </div>
+  </div>
+ </section>
+
+  <!-- service section -->
+  <section class="max-w-7xl mx-auto px-5 my-6 text-black" id="Services">
+    <div class="text-center">
+      <p class="mb-3 font-montserrat font-medium">My Services</p>
+      <h3 class="text-primary text-3xl font-bold mb-16">What I Do</h3>
+    </div>
+    <!-- service cards -->
+    <div
+      class="my-16 flex flex-col md:flex-row justify-around items-center gap-12"
+    >
+      <div
+        class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+      >
+        <img
+          src="src/images/Group 62 1.png"
+          alt=""
+          class="w-[196px] mb-12 mx-auto"
+        />
+        <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+        <p class="text-justify">
+          strive to create visually impact designs that effectively
+          communicate ,messages & meet their unique needs.
+        </p>
+      </div>
+      <div
+        class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+      >
+        <img
+          src="src/images/Group 62 1.png"
+          alt=""
+          class="w-[196px] mb-12 mx-auto"
+        />
+        <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+        <p class="text-justify">
+          strive to create visually impact designs that effectively
+          communicate ,messages & meet their unique needs.
+        </p>
+      </div>
+      <div
+        class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+      >
+        <img
+          src="src/images/Group 62 1.png"
+          alt=""
+          class="w-[196px] mb-12 mx-auto"
+        />
+        <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+        <p class="text-justify">
+          strive to create visually impact designs that effectively
+          communicate ,messages & meet their unique needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- scripts tags -->
+ <script src="src/app.js"></script>
+
 </body>
 </html>
